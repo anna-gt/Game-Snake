@@ -214,7 +214,7 @@
     console.log('modal closed');
   }
 
-  //window.onbeforeunload = befUnload;
+  window.onbeforeunload = befUnload;
 
   function befUnload(EO) {
     EO=EO||window.event;
