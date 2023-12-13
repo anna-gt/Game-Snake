@@ -204,14 +204,12 @@
     document.querySelector('.modal-glass').style.visibility = 'visible';
     modal.style.visibility = 'visible';
     modal.style.width = 'auto';
-    console.log('modal opened');
   }
   function closeModal() {
     let modal = document.querySelector('.modal-menu');
     document.querySelector('.modal-glass').style.visibility = 'hidden';
     modal.style.visibility = 'hidden';
     modal.style.width = 0 + 'px';
-    console.log('modal closed');
   }
 
   window.onbeforeunload = befUnload;
@@ -219,7 +217,7 @@
   function befUnload(EO) {
     EO=EO||window.event;
     // если текст изменён, попросим браузер задать вопрос пользователю
-    if ( (gameStat === 1 || gameStat === 2) && currentScore > 0 )
-      console.log('we have progress')
+    if ( (gameStat === 1 || gameStat === 2) && currentScore > 0 ) {
       EO.returnValue='Вы можете потерять свой прогресс';
+    }
   };
