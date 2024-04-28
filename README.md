@@ -1,4 +1,4 @@
-Try it on https://anna-gt.github.io/
+Try it on https://anna-gt.github.io/ <br>
 My realisation of classic game "Snake" as graduation project of JavaScript course. The project was assessed according to the usage of:
 - animation: CSS, JavaScript, SVG;
 - JavaScript multimedia: sound, vibration;
